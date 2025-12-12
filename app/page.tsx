@@ -26,6 +26,7 @@ const Home = () => {
   };
   return (
     <div className="container items-center m-auto" style={{ textAlign: "center", marginTop: "50px",border:"2px solid green", width:"400px", padding:"20px" }}>
+      <h1 className="text-2xl font-semibold mb-3">Memory Match Game</h1>
       {initialValue.map((item, index) => (
         <span key={"key" + index}>
           {matched.length >= 2 &&
