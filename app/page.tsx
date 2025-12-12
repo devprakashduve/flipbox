@@ -7,7 +7,7 @@ interface Matched {
 }
 
 const Home = () => {
-  const initialValue = [2, 2, 3, 5, 1, 2, 3, 4, 6, 2, 3, 4, 5];
+  const initialValue = [2, 2, 3, 5, 1, 2, 3, 4, 2, 3, 4, 5];
   const [matched, setMatched] = useState<Matched[]>([]);
   const flipBox = (captureClickedBox:Matched) => {
     if (matched?.length >= 1) {
@@ -25,7 +25,7 @@ const Home = () => {
     setMatched([]);
   };
   return (
-    <div className="container" style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="container items-center m-auto" style={{ textAlign: "center", marginTop: "50px",border:"2px solid green", width:"400px", padding:"20px" }}>
       {initialValue.map((item, index) => (
         <span key={"key" + index}>
           {matched.length >= 2 &&
