@@ -35,6 +35,6 @@ jobs:
           script: |
             cd /home/ubuntu/flipbox
             git pull origin main
-            npm ci
+            npm install
             npm run build
             pm2 restart next-app
