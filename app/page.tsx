@@ -51,7 +51,7 @@ const Home = () => {
                 className={`
                   w-16 h-16 rounded-md text-xl font-bold transition-all duration-200
                   border border-gray-400
-                  ${isCleared ? "opacity-0 pointer-events-none" : "bg-yellow-300 text-red-700 hover:scale-105"}
+                  ${isCleared ? "opacity-0 pointer-events-none" : "bg-gray-400 text-red-700 hover:scale-105"}
                 `}
               >
                 {isShown ? item : ""}
